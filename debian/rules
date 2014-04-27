@@ -75,9 +75,6 @@ override_dh_installdocs:
 	dh_installdocs -Ndpkg-dev
 	dh_installdocs -pdpkg-dev --doc-main-package=dpkg
 
-override_dh_installchangelogs:
-	dh_installchangelogs --no-trim
-
 override_dh_bugfiles:
 	dh_bugfiles -A
 

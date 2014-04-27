@@ -10,7 +10,6 @@ Standards-Version: 4.6.2
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
- debhelper (>= 13.10~),
  pkgconf | pkg-config,
 # Version needed for ITS support.
  gettext (>= 0.19.7),
@@ -20,7 +19,7 @@ Build-Depends:
  zlib1g-dev,
  libbz2-dev,
 # Version needed for multi-threaded decompressor support.
- liblzma-dev (>= 5.4.0),
+ liblzma-dev,
 # Version needed for the new streaming API.
  libzstd-dev (>= 1.4.0),
  libselinux1-dev [linux-any],
@@ -28,7 +27,7 @@ Build-Depends:
 # Needed for the functional test.
  bzip2 <!nocheck>,
 # Version needed for multi-threaded decompressor support.
- xz-utils (>= 5.4.0) <!nocheck>,
+ xz-utils <!nocheck>,
 # Needed for the functional test.
  zstd <!nocheck>,
 # Needed for the author release process.
@@ -89,7 +88,7 @@ Depends:
  libmd-dev,
  zlib1g-dev,
 # Version needed for multi-threaded decompressor support.
- liblzma-dev (>= 5.4.0),
+ liblzma-dev,
 # Version needed for the new streaming API.
  libzstd-dev (>= 1.4.0),
  libbz2-dev,
@@ -113,7 +112,7 @@ Depends:
  tar (>= 1.28-1),
  bzip2,
 # Version needed for multi-threaded decompressor support.
- xz-utils (>= 5.4.0),
+ xz-utils,
 # Version needed for git-style diff support.
  patch (>= 2.7),
  make,
@@ -162,7 +161,7 @@ Recommends:
  liblocale-gettext-perl,
  bzip2,
 # Version needed for multi-threaded decompressor support.
- xz-utils (>= 5.4.0),
+ xz-utils,
 Suggests:
  debian-keyring,
  gnupg | sq | sqop | pgpainless-cli,
